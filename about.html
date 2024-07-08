@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>FR3E</title>
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="navbar-logo"><img src="logo-text.svg" class="logo"></a>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="about.html">About</a>
+            <a href="index.html#FAQ">FAQ</a>
+            <a href="actions.html">Actions</a>
+            <a href="#documents.html">Documents</a>
+            <a href="#contact">Contact</a>
+            <a href="#donate" style="color:#fff; background-color:#6401E3;border:1px solid #6401E3; border-radius:25px; padding-left: 15px; padding-right: 15px">Donate</a>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="logo-blank.svg">
+    </div>
+
+    <div class="about">
+        <p>Financial Surveillnce under current AML/CFT regimes has come to a point where it endangers democracy more than it provides safety to citizens. Under the pretext of protecting us against terrorism and money laundering, AML/CFT laws only continue to expand. AML/CFT laws increasingly threaten our basic fundamental rights despite far-reaching evidence that AML/CFT laws are inefficient and even counterproductive to fighting crime with the mass collection of data leading to a rise in identity thefts and the systematic oppression of dissent. From financial censorship and arbitrary bank account closures based on income and nationality to the criminalization of human rights like the right to privacy, violations of the presumption of innocence, the outsourcing of policing to private banks and companies and the lack of legal recourse for accused, AML/CFT laws are an endangerment to the basic pillars of democratic values.</p>
+        <p><br>FR3E consists of a group of citizens with very diverse backgrounds: specialists of finance and law, journalists, engineers, financial compliance officers, and human rights advocates. But we have one thing in common: the willingness to fight for Financial Rights Enactment and Empowerment in Europe to protect our human rights in finance. We believe that we must stop the current drifts of total financial surveillance, that inevitably lead to a mass surveillance society where freedom becomes suspicious, and fundamental rights are but a memory.</p>
+    </div>
+
+    <div class="support">
+        <div class="support-grid-container">
+            <div class="support-grid-item">
+                <img src="profile01.jpg" alt="Image 1">
+                <h3>Alexandre Stachtchenko</h3>
+                <p>President</p>
+                <button><a href="x.com"><img src="twitterlogo.png"></a><a href="google.com"><img src="website.png"></a></button>
+            </div>
+            <div class="support-grid-item">
+                <img src="profile04.jpg" alt="Image 1">
+                <h3>Estelle de Marco</h3>
+                <p>Legal Strategy</p>
+                <button><a href="x.com"><img src="twitterlogo.png"></a><a href="google.com"><img src="website.png"></a></button>
+            </div>
+            <div class="support-grid-item">
+                <img src="profile05.jpg" alt="Image 1">
+                <h3>Antoine Poinsot</h3>
+                <p>Advisor</p>
+                <button><a href="x.com"><img src="twitterlogo.png"></a><a href="google.com"><img src="website.png"></a></button>
+            </div>
+            <div class="support-grid-item">
+                <img src="profile03.jpg" alt="Image 1">
+                <h3>Alexis Roussel</h3>
+                <p>Advisor</p>
+                <button><a href="x.com"><img src="twitterlogo.png"></a><a href="google.com"><img src="website.png"></a></button>
+            </div>
+            <div class="support-grid-item">
+                <img src="L0laL33tz.jpg" alt="Image 1">
+                <h3>L0la L33tz</h3>
+                <p>Advisor</p>
+                <button><a href="x.com"><img src="twitterlogo.png"></a><a href="google.com"><img src="website.png"></a></button>
+            </div>
+            <div class="support-grid-item">
+                <img src="profile02.jpg" alt="Image 1">
+                <h3>Simon Lelieveldt</h3>
+                <p>Advisor</p>
+                <button><a href="x.com"><img src="twitterlogo.png"></a><a href="google.com"><img src="website.png"></a></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="donate" class="donate">
+        <div class="donate-content">
+            <h4>Donate Today</h4>
+            <p>FR3E uses your donations to finance legal proceedings against the EU's AML/CFT Regime. All donations are fully tax deductible or can be made anonymously via cryptocurrencies.<br><br>Financial Rights Empowerment and Enactment in Europe<br>Credit Suisse<br>IBAN FR9837951384088<br>BIC NTSXX4550</p>
+        </div>
+        <div class="donate-content">
+            <h1>BTCPay Server Pay Button</h1>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="footer-column">
+            <h3>Imprint</h3>
+            <p>FR3E</p>
+            <p>Addressline 02</p>
+            <p>Addressline 03</p>
+            <p>Addressline 04</p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>info@fr3e.eu</p>
+            <p>donations@fr3e.eu</p>
+            <p>collab@fr3e.eu</p>
+            <p>press@fr3e.eu</p>
+        </div>
+        <div class="footer-column">
+            <h3>Stay Up To Date</h3>
+            <p>Sign up for our newsletter</p>
+            <p>[newsletterbox]</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleExpand(clickedItem) {
+  // Find the parent grid container of the clicked item
+  var container = clickedItem.closest('.grid-container');
+  
+  // Find the expanding element within this container
+  var expandingElement = container.querySelector('.expanding-element');
+
+  if (expandingElement.classList.contains('hidden')) {
+    expandingElement.classList.remove('hidden');
+    expandingElement.style.display = 'block';
+  } else {
+    expandingElement.classList.add('hidden');
+    expandingElement.style.display = 'none';
+  }
+}
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbarLinks');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>

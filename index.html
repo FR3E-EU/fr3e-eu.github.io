@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>FR3E</title>
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="navbar-logo"><img src="logo-text.svg" class="logo"></a>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="about.html">About</a>
+            <a href="#FAQ">FAQ</a>
+            <a href="actions.html">Actions</a>
+            <a href="documents.html">Documents</a>
+            <a href="#contact">Contact</a>
+            <a href="#donate" style="color:#fff; background-color:#6401E3;border:1px solid #6401E3; border-radius:25px; padding-left: 15px; padding-right: 15px">Donate</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <p class="subheading">FR3E exists to protect Human Rights in Finance</p>
+            <h1>Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status.</h1>
+            <div class="hero-button"><a href="#FAQ">Learn More</a></div>
+        </div>
+    </div>
+
+    </div>
+
+    <div id="about" class="about">
+        <h2>About FR3E</h2>
+        <div class="about-text">
+            <p>FR3E is an entity to take legal action against unproportionate, exclusionary, and discriminatory AML/CFT laws in the EU, aiming at their annulment or strict revision in accordance with international human rights law. We believe that the EU's laws to enact Anti-Money Laundering and Countering the Financing of Terrorism (AML/CFT) are illegal and violate fundamental rights enshrined in the UN Convention on Human Rights (UNCHR) and the European Convention on Human Rights (ECHR).</p>
+        </div>
+        <div class="main-button"><a href="about.html">Learn More</a></div>
+    </div>
+
+    <div id="actions" class="about">
+        <h2>Recent Actions</h2>
+        <div class="about-text">
+            <p>FR3E is currently working to file for an annulment of the EU's new AML package consisting of AML6, AMLA and AMLD. The EU's new AML package establishes a new inter-european financial intelligence agency, limits the transaction of cash and significantly increases the surveillance in cryptocurrencies without due cause.</p>
+        </div>
+        <div class="thumbnail"><a href="actions.html"><img src="annulment.svg"></a></div>
+    </div>
+
+    <div id="FAQ" class="FAQ">
+
+        <h2>FAQ: How AML/CFT Laws violate Human Rights</h2>
+
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleExpand(this)">Why AML/CFT Laws are Illegal <img src="arrow.png"></div>
+            <div class="expanding-element hidden">A repository guiding you in removing yourself from data brokers.</p><p><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md" target="_blank" rel="noopener noreferrer">https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md</a></div>
+          </div> 
+
+            <div class="grid-container">
+              <div class="grid-item" onclick="toggleExpand(this)">Why AML/CFT Laws Violate the Presumption of Innocence <img src="arrow.png"></div>
+              <div class="expanding-element hidden">A repository guiding you in removing yourself from data brokers.</p><p><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md" target="_blank" rel="noopener noreferrer">https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md</a></div>
+            </div> 
+
+            <div class="grid-container">
+                <div class="grid-item" onclick="toggleExpand(this)">Why AML/CFT Laws Violate the Right to due Process <img src="arrow.png"></div>
+                <div class="expanding-element hidden">A repository guiding you in removing yourself from data brokers.</p><p><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md" target="_blank" rel="noopener noreferrer">https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md</a></div>
+              </div> 
+
+              <div class="grid-container">
+                <div class="grid-item" onclick="toggleExpand(this)">Why AML/CFT Laws Violate the Right to Privacy <img src="arrow.png"></div>
+                <div class="expanding-element hidden">A repository guiding you in removing yourself from data brokers.</p><p><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md" target="_blank" rel="noopener noreferrer">https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List/blob/master/README.md</a></div>
+              </div> 
+
+    </div>
+
+    <div id="donate" class="donate">
+        <div class="donate-content">
+            <h4>Donate Today</h4>
+            <p>FR3E uses your donations to finance legal proceedings against the EU's AML/CFT Regime. All donations are fully tax deductible or can be made anonymously via cryptocurrencies.<br><br>Financial Rights Empowerment and Enactment in Europe<br>Credit Suisse<br>IBAN FR9837951384088<br>BIC NTSXX4550</p>
+        </div>
+        <div class="donate-content">
+            <h1>BTCPay Server Pay Button</h1>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="footer-column">
+            <h3>Imprint</h3>
+            <p>FR3E</p>
+            <p>Addressline 02</p>
+            <p>Addressline 03</p>
+            <p>Addressline 04</p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>info@fr3e.eu</p>
+            <p>donations@fr3e.eu</p>
+            <p>collab@fr3e.eu</p>
+            <p>press@fr3e.eu</p>
+        </div>
+        <div class="footer-column">
+            <h3>Stay Up To Date</h3>
+            <p>Sign up for our newsletter</p>
+            <p>[newsletterbox]</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleExpand(clickedItem) {
+  // Find the parent grid container of the clicked item
+  var container = clickedItem.closest('.grid-container');
+  
+  // Find the expanding element within this container
+  var expandingElement = container.querySelector('.expanding-element');
+
+  if (expandingElement.classList.contains('hidden')) {
+    expandingElement.classList.remove('hidden');
+    expandingElement.style.display = 'block';
+  } else {
+    expandingElement.classList.add('hidden');
+    expandingElement.style.display = 'none';
+  }
+}
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbarLinks');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>FR3E</title>
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="navbar-logo"><img src="logo-text.svg" class="logo"></a>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="about.html">About</a>
+            <a href="index.html#FAQ">FAQ</a>
+            <a href="actions.html">Actions</a>
+            <a href="#documents.html">Documents</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="index.html#donate" style="color:#fff; background-color:#6401E3;border:1px solid #6401E3; border-radius:25px; padding-left: 15px; padding-right: 15px">Donate</a>
+        </div>
+    </div>
+
+    <div class="placeholder">
+        <h4>Coming Soon</h4>
+        <p>FR3E believes in full transparency. <br>All documents regarding our actions will be made available in original form.</p>
+    </div>
+
+    <script>
+            function toggleMenu() {
+            const navbarLinks = document.getElementById('navbarLinks');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+
+    </body>
+    </html>
